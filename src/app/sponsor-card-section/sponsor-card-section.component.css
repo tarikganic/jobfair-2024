@@ -1,0 +1,10 @@
+
+.platinum-card{
+    background: rgb(140,173,190);
+    background: linear-gradient(61deg, rgba(140,173,190,1) 0%, rgba(208,246,255,1) 100%);
+    border: 2px solid #00d8ff;
+    text-shadow: 1px 1px 2px black;
+}
+#logoPicture{
+    background-color: white;
+}
