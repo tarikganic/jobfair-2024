@@ -3,10 +3,11 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-countdown',
   template: `
-    <div class="countdown-container" [style.top]="topPosition + 'px'" [style.left]="leftPosition + 'px'">
+    <div>
       <p>{{ countdown }}</p>
     </div>
   `,
+  standalone: true,
   styles: [
     `
       .countdown-container {

@@ -17,3 +17,7 @@
     background-image: url("https://img.freepik.com/free-photo/white-crumpled-paper-texture-background_1373-162.jpg?w=360&t=st=1705438855~exp=1705439455~hmac=971a80a6a1359c90730588928f28e74ac9441e2169ae9a74fb463dc8adef4d30");
 }
 
+.my-text-shadow
+{
+    filter: drop-shadow(10px 5px 5px black);
+}

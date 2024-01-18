@@ -5,3 +5,10 @@
 @tailwind utilities;
 
 /* styles.css or styles.scss */
+
+
+::selection {
+    background: rgb(255, 255, 255); /*Prank for the friend :D*/
+    color: rgb(253, 253, 253);
+    
+  }

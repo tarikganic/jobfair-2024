@@ -4,17 +4,19 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'jobfair-blue': '#204293',
-        'jobfair-light-blue': '#2955bd',
-        'agenda-best-yellow': '#ffb521',
-        'brown-best': '#563232'
+        "jobfair-blue": "#204293",
+        "jobfair-light-blue": "#2955bd",
+        "agenda-best-yellow": "#ffb521",
+        "brown-best": "#563232",
       },
       backgroundImage: {
-        'opening': "url('https://cdn-icons-png.flaticon.com/512/1376/1376490.png')",
-
+        opening:
+          "url('https://cdn-icons-png.flaticon.com/512/1376/1376490.png')",
+      },
+      screens: {
+        mobile: { max: "639px", min: "0px" },
       },
     },
   },
   plugins: [],
-}
-
+};
