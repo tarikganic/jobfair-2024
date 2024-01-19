@@ -19,5 +19,5 @@
 
 .my-text-shadow
 {
-    filter: drop-shadow(10px 5px 5px black);
+    filter: drop-shadow(10px 5px 5px rgb(50, 50, 50));
 }

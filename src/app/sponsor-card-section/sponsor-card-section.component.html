@@ -1,67 +1,69 @@
-<div class="w-full text-center text-white text-3xl mt-10 pb-2 font-bold">PLATINUM PARTNERS</div>
-<div class="flex flex-wrap justify-center md:gap-16 gap-3 text-white"> <!--CONTAIENR-->
-    <!--CARD-->
-    <div *ngFor="let partner of partners" class="platinum-card h-auto flex rounded-2xl">
-        <div class="m-3 flex flex-col items-center">
-          <div [style.backgroundImage]="'url(' + partner.image + ')'" id="logoPicture" class="w-52 bg-cover bg-no-repeat bg-center h-52 rounded-xl border-1 border-black">
-          </div>
-          <div class="mt-1 w-52 pb-6">
-            <h2 id="partnerTitle" class="text-2xl font-bold">{{ partner.title }}</h2>
-            <h3 id="partnerBio">{{ partner.bio }}</h3>
-          </div>
-        </div>
-      </div>
-      
-    <!--CARD-->
-  </div> <!--CONTAIENR-->
-  <div class="w-full text-center text-white text-3xl mt-10 pb-2 font-bold">PLATINUM PARTNERS</div>
-<div class="flex flex-wrap justify-center md:gap-16 gap-3 text-white"> <!--CONTAIENR-->
-    <!--CARD-->
-    <div *ngFor="let partner of partners" class="platinum-card h-auto flex rounded-2xl">
-        <div class="m-3 flex flex-col items-center">
-          <div [style.backgroundImage]="'url(' + partner.image + ')'" id="logoPicture" class="w-52 bg-cover bg-no-repeat bg-center h-52 rounded-xl border-1 border-black">
-          </div>
-          <div class="mt-1 w-52 pb-6">
-            <h2 id="partnerTitle" class="text-2xl font-bold">{{ partner.title }}</h2>
-            <h3 id="partnerBio">{{ partner.bio }}</h3>
-          </div>
-        </div>
-      </div>
-      
-    <!--CARD-->
-  </div> <!--CONTAIENR-->
-  <div class="w-full text-center text-white text-3xl mt-10 pb-2 font-bold">PLATINUM PARTNERS</div>
-<div class="flex flex-wrap justify-center md:gap-16 gap-3 text-white"> <!--CONTAIENR-->
-    <!--CARD-->
-    <div *ngFor="let partner of partners" class="platinum-card h-auto flex rounded-2xl">
-        <div class="m-3 flex flex-col items-center">
-          <div [style.backgroundImage]="'url(' + partner.image + ')'" id="logoPicture" class="w-52 bg-cover bg-no-repeat bg-center h-52 rounded-xl border- border-black">
-          </div>
-          <div class="mt-1 w-52 pb-6">
-            <h2 id="partnerTitle" class="text-2xl font-bold">{{ partner.title }}</h2>
-            <h3 id="partnerBio">{{ partner.bio }}</h3>
-          </div>
-        </div>
-      </div>
-      
-    <!--CARD-->
-  </div> <!--CONTAIENR-->
+<div class="w-full text-center text-white text-3xl mobile:font-light mobile:text-xl mt-10 pb-2 font-bold">PLATINUM PARTNERS</div>
 
-<!-- 
-  <div class="w-full text-center text-white text-3xl mt-10 pb-2 font-bold">PLATINUM PARTNERS</div>
-<div class="flex flex-wrap justify-center gap-3 text-white"> 
-  
-    <div *ngFor="let partner of partners" class="platinum-card w-1/3 md:w-auto h-auto flex rounded-3xl">
-        <div class="m-2 w-auto flex flex-col items-center">
-          <div [style.backgroundImage]="'url(' + partner.image + ')'" id="logoPicture" class="w-full bg-contain bg-no-repeat bg-center h-32 rounded-2xl border-1 border-black">
+<div class="flex flex-wrap justify-center mobile:gap-1  md:gap-16 gap-3 text-white"> <!--CONTAIENR-->
+    <!--CARD-->
+    <div *ngFor="let partner of partners" class="platinum-card h-auto flex rounded-2xl">
+        <div class="m-3 mobile:m-1 flex flex-col items-center">
+          <div [style.backgroundImage]="'url(' + partner.image + ')'" id="logoPicture" class="w-52 h-52 mobile:w-32 mobile:h-32 bg-cover bg-no-repeat bg-center rounded-xl border-1 border-black">
           </div>
-          <div class="mt-1 w-full pb-6">
-            <h2 id="partnerTitle" class="text-xl font-bold">{{ partner.title }}</h2>
-            <h3 id="partnerBio">{{ partner.bio }}</h3>
+          <div class="mt-1 w-52 mobile:w-32 pb-6 mobile:pb-0">
+            <h2 id="partnerTitle" class="text-2xl font-bold mobile:text-xs">{{ partner.title }}</h2>
+            <h3 id="partnerBio" class="mobile:text-xs">{{ partner.bio }}</h3>
           </div>
         </div>
       </div>
-  
-  </div>  -->
+      
+    <!--CARD-->
+</div>
 
-  
+<div class="w-full text-center text-white text-3xl mobile:font-light mobile:text-xl mt-2 pb-2 font-bold">GOLD PARTNERS</div>
+<div class="flex flex-wrap justify-center mobile:gap-1  md:gap-16 gap-3 text-white"> <!--CONTAIENR-->
+  <!--CARD-->
+  <div *ngFor="let partner of Gpartners" class="gold-card h-auto flex rounded-2xl">
+      <div class="m-3 mobile:m-1 flex flex-col items-center">
+        <div [style.backgroundImage]="'url(' + partner.image + ')'" id="logoPicture" class="w-52 h-52 mobile:w-32 mobile:h-32 bg-cover bg-no-repeat bg-center rounded-xl border-1 border-black">
+        </div>
+        <div class="mt-1 w-52 mobile:w-32 pb-6 mobile:pb-0">
+          <h2 id="partnerTitle" class="text-2xl font-bold mobile:text-xs">{{ partner.title }}</h2>
+          <h3 id="partnerBio" class="mobile:text-xs">{{ partner.bio }}</h3>
+        </div>
+      </div>
+    </div>
+    
+  <!--CARD-->
+</div>
+
+<div class="w-full text-center text-white text-3xl mobile:font-light mobile:text-xl mt-2 pb-2 font-bold">SILVER PARTNERS</div>
+<div class="flex flex-wrap justify-center mobile:gap-1  md:gap-16 gap-3 text-white"> <!--CONTAIENR-->
+  <!--CARD-->
+  <div *ngFor="let partner of Spartners" class="silver-card h-auto flex rounded-2xl">
+      <div class="m-3 mobile:m-1 flex flex-col items-center">
+        <div [style.backgroundImage]="'url(' + partner.image + ')'" id="logoPicture" class="w-52 h-52 mobile:w-32 mobile:h-32 bg-cover bg-no-repeat bg-center rounded-xl border-1 border-black">
+        </div>
+        <div class="mt-1 w-52 mobile:w-32 pb-6 mobile:pb-0">
+          <h2 id="partnerTitle" class="text-2xl font-bold mobile:text-xs">{{ partner.title }}</h2>
+          <h3 id="partnerBio" class="mobile:text-xs">{{ partner.bio }}</h3>
+        </div>
+      </div>
+    </div>
+    
+  <!--CARD-->
+</div>
+
+<div class="w-full text-center text-white text-3xl mobile:font-light mobile:text-xl mt-2 pb-2 font-bold">BRONZE PARTNERS</div>
+<div class="flex flex-wrap justify-center mobile:gap-1  md:gap-16 gap-3 text-white"> <!--CONTAIENR-->
+  <!--CARD-->
+  <div *ngFor="let partner of Bpartners" class="bronze-card h-auto flex rounded-2xl">
+      <div class="m-3 mobile:m-1 flex flex-col items-center">
+        <div [style.backgroundImage]="'url(' + partner.image + ')'" id="logoPicture" class="w-52 h-52 mobile:w-32 mobile:h-32 bg-cover bg-no-repeat bg-center rounded-xl border-1 border-black">
+        </div>
+        <div class="mt-1 w-52 mobile:w-32 pb-6 mobile:pb-0">
+          <h2 id="partnerTitle" class="text-2xl font-bold mobile:text-xs">{{ partner.title }}</h2>
+          <h3 id="partnerBio" class="mobile:text-xs">{{ partner.bio }}</h3>
+        </div>
+      </div>
+    </div>
+    
+  <!--CARD-->
+</div>
+

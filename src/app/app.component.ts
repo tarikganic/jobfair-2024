@@ -10,12 +10,14 @@ import { PinnedCarouselComponent } from "./pinned-carousel/pinned-carousel.compo
 import { SponsorCardSectionComponent } from "./sponsor-card-section/sponsor-card-section.component";
 import { AboutBestComponent } from "./about-best/about-best.component";
 import { CountdownComponent } from './countdown/countdown.component';
+import { PresentersComponentComponent } from './presenters-component/presenters-component.component';
+
 @Component({
     selector: 'app-root',
     standalone: true,
     templateUrl: './app.component.html',
     styleUrl: './app.component.css',
-    imports: [CommonModule, RouterOutlet, JobfairComponentComponent, CountdownComponent, SsComponentComponent, DayOneComponent, DayTwoComponent, DayThreeComponent, PinnedCarouselComponent, SponsorCardSectionComponent, AboutBestComponent]
+    imports: [CommonModule, RouterOutlet, JobfairComponentComponent, CountdownComponent, SsComponentComponent, DayOneComponent, DayTwoComponent, DayThreeComponent, PinnedCarouselComponent, SponsorCardSectionComponent, AboutBestComponent, PresentersComponentComponent]
 })
 export class AppComponent {
   title = 'jobfair-app';

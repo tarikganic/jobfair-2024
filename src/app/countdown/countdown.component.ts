@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, NgZone  } from '@angular/core';
 
 @Component({
   selector: 'app-countdown',
@@ -21,23 +21,35 @@ import { Component, OnInit } from '@angular/core';
   ],
 })
 export class CountdownComponent implements OnInit {
+  constructor(private ngZone: NgZone) {}
   countdown: string = ''; // Initialize countdown
   topPosition: number = 0; // Initialize topPosition
   leftPosition: number = 0; // Initialize leftPosition
 
-  ngOnInit() {
+  ngOnInit() 
+  {
     this.calculateCountdown();
-    this.setPosition();
 
-    // Update countdown every second
-    setInterval(() => {
-      this.calculateCountdown();
-    }, 1000);
-
-    // Update position every 200 milliseconds
-    setInterval(() => {
-      this.setPosition();
-    }, 200);
+    this.ngZone.runOutsideAngular(() => {
+      setInterval(() => {
+        this.ngZone.run(() => {
+          this.calculateCountdown();
+          
+          
+          // Update countdown every second
+          // setInterval(() => {
+          //   this.calculateCountdown();
+          // }, 1000);
+      
+          // // Update position every 200 milliseconds
+          // setInterval(() => {
+          //   this.setPosition();
+          // }, 200);
+          // Your code here
+          //console.log('Interval executed');
+        });
+      }, 1000);
+    });
   }
 
   calculateCountdown() {
@@ -58,9 +70,5 @@ export class CountdownComponent implements OnInit {
     this.countdown = `${days}d ${hours}h ${minutes}m ${seconds}s`;
   }
 
-  setPosition() {
-    // Set the position based on the window scroll and size
-    this.topPosition = window.scrollY + 10;
-    this.leftPosition = window.innerWidth - 150;
-  }
+
 }
