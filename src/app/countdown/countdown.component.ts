@@ -22,9 +22,9 @@ import { Component, OnInit, NgZone  } from '@angular/core';
 })
 export class CountdownComponent implements OnInit {
   constructor(private ngZone: NgZone) {}
-  countdown: string = ''; // Initialize countdown
-  topPosition: number = 0; // Initialize topPosition
-  leftPosition: number = 0; // Initialize leftPosition
+  countdown: string = ''; 
+  topPosition: number = 0; 
+  leftPosition: number = 0; 
 
   ngOnInit() 
   {
@@ -53,20 +53,13 @@ export class CountdownComponent implements OnInit {
   }
 
   calculateCountdown() {
-    // Set the target date (4th of March 2024)
     const targetDate = new Date('2024-03-04T00:00:00');
-
-    // Calculate the time remaining
     const now = new Date();
     const timeRemaining = targetDate.getTime() - now.getTime();
-
-    // Calculate days, hours, minutes, and seconds
     const days = Math.floor(timeRemaining / (1000 * 60 * 60 * 24));
     const hours = Math.floor((timeRemaining % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
     const minutes = Math.floor((timeRemaining % (1000 * 60 * 60)) / (1000 * 60));
     const seconds = Math.floor((timeRemaining % (1000 * 60)) / 1000);
-
-    // Format the countdown string
     this.countdown = `${days}d ${hours}h ${minutes}m ${seconds}s`;
   }
 
