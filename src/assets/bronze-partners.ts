@@ -1,12 +1,8 @@
 export const BronzePartners = [
     {
-      "image": "assets/jobfair-logo-colored.jpg",
-      "title": "TBA Bronze",
-      "bio": "Placeholder for short text..."
+      "image": "assets/smed.png",
+      "title": "SMED  Engineering",
+      "bio": "Sarajevo, Bosnia and Herzegovina"
     },
-    {
-      "image": "assets/jobfair-logo-colored.jpg",
-      "title": "TBA Bronze",
-      "bio": "Placeholder for short text..."
-    }
+
   ];

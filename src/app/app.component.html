@@ -1,6 +1,6 @@
 <div class=" bg-white h-screen">
   <header class="absolute inset-x-0 top-0 z-50">
-    <nav class="flex items-center justify-between p-6 lg:px-8" aria-label="Global">
+    <nav class="flex items-center mobile:justify-between justify-center min-w-full p-6 lg:px-8" aria-label="Global">
       <div class="flex lg:flex-1">
         <a href="#" class="-m-1.5 p-1.5">
           <span class="sr-only">Your Company</span>
@@ -15,7 +15,7 @@
           </svg>
         </button>
       </div>
-      <div class="hidden lg:flex font-semibold text-white my-text-shadow lg:gap-x-12">
+      <div class=" hidden lg:flex font-semibold text-black lg:gap-x-12">
         <a href="#home" class="text-xl leading-6 hover:text-white transition-all duration-100">Home</a>
         <a href="#about" class="text-xl leading-6 hover:text-white transition-all duration-100">About</a>
         <a href="#agenda" class="text-xl leading-6 hover:text-white transition-all duration-100">Agenda</a>
@@ -61,23 +61,22 @@
   </header>
 
   <div class="relative isolate mobile:h-screen mobile:p-2 sm:px-6 sm:pt-3 lg:px-8">
-    <div class="absolute h-screen inset-x-0 top-0 -z-10 transform-gpu overflow-hidden blur-sm " aria-hidden="true">
-      <video autoplay muted loop playsinline id="myVideo" class="blur-sm min-h-full flex right-0 mobile:-left-3/4 min-w-max sm:min-w-full fixed sm:right-0 sm:bottom-0">
-        <source src="../assets/video.mp4" type="video/mp4">
-        Your browser does not support HTML5 video.
-      </video>
+    <div class="absolute h-screen inset-x-0 top-0 -z-10 transform-gpu overflow-hidden " aria-hidden="true">
+      <div id="myVideo" class=" min-h-full w-full flex   fixed  ">
+        <img class="blur-lg  min-w-full"src="../assets/giphy.gif">
+      </div>
     </div>
     <div class="mx-auto sm:max-w-2xl py-52 mobile:py-56 lg:py-48">
       <div class="hidden sm:mb-8 sm:flex sm:justify-center">
-        <div class="relative rounded-full px-3 py-1 text-sm leading-6 opacity-85  text-gray-900 ring-1 ring-jobfair-blue hover:ring-gray-900/20">
+        <div class="mix-blend-luminosity relative rounded-full px-3 py-1 text-sm leading-6 opacity-85  text-white ring-1 ring-white">
           BEST Mostar presents 
         </div>
       </div>
       <div class="text-center">
-        <h1 class="mobile:text-5xl font-bold tracking-tight text-white my-text-shadow text-6xl">Jobfair & Soft Skills Academy</h1>
-        <p class="mt-6 text-lg mobile:text-center leading-8 text-white my-text-shadow">Explore careers, connect with employers, and refine essential soft skills at the Mostar Jobfair & Soft Skills Academy for a comprehensive professional development experience.</p>
+        <h1 class="mobile:text-5xl font-bold tracking-tight text-black my-text-shadow  text-8xl">Jobfair & Soft Skills Academy</h1>
+        <p class="mt-6 text-lg mobile:text-center leading-8 text-gray-900 my-text-shadow">Explore careers, connect with employers, and refine essential soft skills at the Mostar Jobfair & Soft Skills Academy for a comprehensive professional development experience.</p>
         <div class="mt-10 flex items-center justify-center gap-x-6">
-          <a href="#" class="rounded-full bg-jobfair-blue opacity-85 px-3.5 py-2.5 text-xl font-semibold text-white shadow-sm  focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
+          <a href="#" class=" rounded-full bg-jobfair-blue opacity-85 px-3.5 py-2.5 text-xl font-semibold text-white shadow-sm  focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
             <app-countdown></app-countdown>
           </a>
         </div>
@@ -90,15 +89,18 @@
   <app-jobfair-component></app-jobfair-component>
   <app-ss-component></app-ss-component>
 </div>
-<div id="agenda"class="p-20 mobile:p-0 mobile:py-2 flex-wrap mobile:flex-nowrap flex flex-row mobile:flex-col justify-center gap-5 mobile:gap-0 mobile:h-fit items-center w-full agendaSection">
-  <app-day-one></app-day-one>
-  <app-day-two></app-day-two>
-  <app-day-three></app-day-three>
+<div class="agendaSection text-center">
+  <button class="button-29 mt-10 mobile:my-5 " role="button"><a href="https://docs.google.com/forms/d/e/1FAIpQLSd80CPqE4CwEug7R0DLASKgsxvVFCU93o-PAIZwKgggj29YXg/viewform?usp=sf_link">PRIJAVI SE</a></button>
+  <div class="p-10  mobile:py-2 flex-wrap mobile:flex-nowrap flex flex-row mobile:flex-row justify-center gap-5 mobile:gap-0 mobile:h-fit items-center w-full ">
+    <app-day-one class="mobile:w-full mobile:flex mobile:items-center mobile:justify-center"></app-day-one>
+    <app-day-two></app-day-two>
+    <app-day-three></app-day-three>
+  </div>
 </div>
 
 <div id="partners"class="w-full flex flex-col justify-center items-center pb-12 sponsors-class">
-  <div class="text-5xl mobile:text-xl mobile:p-4 tracking-wide font-inter font-normal p-10 text-blue-50 ">PARTNERS</div>
-  <div class="mobile:w-5/6 w-2/4">
+  <div class="text-7xl text-inter mobile:text-xl mobile:p-4 tracking-wide font-inter font-normal pt-10 text-blue-50 ">PARTNERS</div>
+  <div class="mobile:w-full w-3/4">
     <app-pinned-carousel></app-pinned-carousel>
   </div>
   <app-sponsor-card-section></app-sponsor-card-section>
@@ -108,12 +110,13 @@
 
 <app-about-best id="aboutbest"></app-about-best>
 
-<footer class="bg-jobfair-blue w-full h-fit text-center font-inter sm:text-white py-2">
+<footer class="bg-black w-full h-fit text-center font-inter text-white
+ py-2">
   <div>
     Board of European Students of Technology
   </div>
   <div class="font-bold font-inter"> 
-    Made by ITD
+    Made by ITD Mostar
   </div>
 </footer>
 

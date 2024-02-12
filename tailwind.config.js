@@ -19,6 +19,12 @@ module.exports = {
       screens: {
         mobile: { max: "639px", min: "0px" },
       },
+      height:{
+        '150': '150rem',
+      },
+      width:{
+        'almost': '80%',
+      },
     },
   },
   plugins: [],

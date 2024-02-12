@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit, HostListener } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
 import { JobfairComponentComponent } from './jobfair-component/jobfair-component.component';
@@ -19,8 +19,11 @@ import { PresentersComponentComponent } from './presenters-component/presenters-
     styleUrl: './app.component.css',
     imports: [CommonModule, RouterOutlet, JobfairComponentComponent, CountdownComponent, SsComponentComponent, DayOneComponent, DayTwoComponent, DayThreeComponent, PinnedCarouselComponent, SponsorCardSectionComponent, AboutBestComponent, PresentersComponentComponent]
 })
-export class AppComponent {
+export class AppComponent implements OnInit{
+  constructor(){}
   title = 'jobfair-app';
   sidebarIsOpen:boolean = false;
+  ngOnInit(): void {
+  }
 
 }

@@ -7,19 +7,19 @@
 }
 .gold-card{
     background: rgb(148,102,33);
-    background: linear-gradient(61deg, rgba(148,102,33,1) 0%, rgba(255,216,0,1) 100%);
+    background: linear-gradient(61deg, rgba(148, 102, 33, 0.515) 0%, rgba(255,216,0,1) 100%);
     border: 2px solid #ffd800;
     text-shadow: 1px 1px 2px black;
 }
 .silver-card{
     background: rgb(129,129,129);
-    background: linear-gradient(61deg, rgba(129,129,129,1) 0%, rgba(233,233,233,1) 100%);
+    background: linear-gradient(61deg, rgba(129, 129, 129, 0.522) 0%, rgba(233,233,233,1) 100%);
     border: 2px solid #ffffff;
     text-shadow: 1px 1px 2px black;
 }
 .bronze-card{
-    background: rgb(125,71,12);
-    background: linear-gradient(61deg, rgba(125,71,12,1) 0%, rgba(184,140,20,1) 100%);
+    background: rgba(163, 106, 46, 0.829);
+    background: linear-gradient(61deg, rgba(100, 53, 4, 0.473) 0%, rgba(171, 108, 13, 0.99) 100%);
     border: 2px solid #c59b08;
     text-shadow: 1px 1px 2px black;
 }
