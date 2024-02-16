@@ -23,6 +23,12 @@
     border: 2px solid #c59b08;
     text-shadow: 1px 1px 2px black;
 }
+.friend-card{
+    background-color: rgb(44, 44, 44);
+    background: linear-gradient(61deg, rgba(44, 44, 44, 0.522) 0%, rgba(44,44,44,1) 100%);
+    border: 2px solid black;
+    text-shadow: 1px 1px 2px black;
+}
 #logoPicture{
     background-color: white;
 }

@@ -4,6 +4,7 @@ import { Partners } from '../../assets/partners';
 import { GoldPartners } from '../../assets/gold-partners';
 import { SilverPartners } from '../../assets/silver-partners';
 import { BronzePartners } from '../../assets/bronze-partners';
+import { friendPartners } from '../../assets/friend-partners';
 @Component({
   selector: 'app-sponsor-card-section',
   standalone: true,
@@ -16,6 +17,7 @@ export class SponsorCardSectionComponent implements OnInit {
   Gpartners:Partner[] = GoldPartners;
   Spartners:Partner[] = SilverPartners;
   Bpartners:Partner[] = BronzePartners;
+  Fpartners:Partner[] = friendPartners;
   constructor() {}
 
   ngOnInit(): void {

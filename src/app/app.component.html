@@ -89,8 +89,11 @@
   <app-jobfair-component></app-jobfair-component>
   <app-ss-component></app-ss-component>
 </div>
-<div class="agendaSection text-center">
-  <button class="button-29 mt-10 mobile:my-5 " role="button"><a href="https://docs.google.com/forms/d/e/1FAIpQLSd80CPqE4CwEug7R0DLASKgsxvVFCU93o-PAIZwKgggj29YXg/viewform?usp=sf_link">PRIJAVI SE</a></button>
+<div class="agendaSection text-center flex flex-col items-center justify-center">
+  <div class="flex flex-row mobile:flex-col mobile:flex-wrap items-center justify-center  gap-2 w-fit">
+    <button class="button-29 text-lg mt-10 mobile:my-1 mobile:w-2/3" role="button"><a href="https://docs.google.com/forms/d/e/1FAIpQLSd80CPqE4CwEug7R0DLASKgsxvVFCU93o-PAIZwKgggj29YXg/viewform?usp=sf_link">Prijavi se!</a></button>
+    <button class="button-29 text-lg mt-10 mobile:my-1 mobile:w-2/3" role="button"><a href="https://docs.google.com/forms/d/e/1FAIpQLSeShXhuv4Azjdc5B0vSTmH3QkR-yR-YxMvRyd_vJvUxyb1UdA/viewform?usp=sf_link ">Sarajevo prevoz</a></button>
+  </div>
   <div class="p-10  mobile:py-2 flex-wrap mobile:flex-nowrap flex flex-row mobile:flex-row justify-center gap-5 mobile:gap-0 mobile:h-fit items-center w-full ">
     <app-day-one class="mobile:w-full mobile:flex mobile:items-center mobile:justify-center"></app-day-one>
     <app-day-two></app-day-two>
@@ -99,7 +102,7 @@
 </div>
 
 <div id="partners"class="w-full flex flex-col justify-center items-center pb-12 sponsors-class">
-  <div class="text-7xl text-inter mobile:text-xl mobile:p-4 tracking-wide font-inter font-normal pt-10 text-blue-50 ">PARTNERS</div>
+  <div class="text-7xl text-inter mobile:text-4xl mobile:p-4 mobile:pb-0 tracking-wide font-inter font-normal pt-10 text-blue-50 ">PARTNERS</div>
   <div class="mobile:w-full w-3/4">
     <app-pinned-carousel></app-pinned-carousel>
   </div>

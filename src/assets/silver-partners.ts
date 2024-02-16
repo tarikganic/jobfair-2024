@@ -14,4 +14,9 @@ export const SilverPartners = [
     "title": "Competent Office Solutions",
     "bio": "Bosnia and Herzegovina"
   },
+  {
+    "image": "assets/htec.png",
+    "title": "HTEC",
+    "bio": "Bosnia and Herzegovina"
+  },
   ];
