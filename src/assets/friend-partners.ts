@@ -4,4 +4,14 @@ export const friendPartners = [
       "title": "Hoću.ba",
       "bio": "Sarajevo, Bosnia and Herzegovina"
     },
+    {
+      "image": "assets/dignitet.png",
+      "title": "Udruženje Dignitet",
+      "bio": "Mostar, Bosnia and Herzegovina"
+    },
+    {
+      "image": "assets/eestecc.png",
+      "title": "Eestec LC Sarajevo",
+      "bio": "Sarajevo, Bosnia and Herzegovina"
+    },
   ];

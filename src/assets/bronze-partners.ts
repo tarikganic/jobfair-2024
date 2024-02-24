@@ -9,4 +9,9 @@ export const BronzePartners = [
       "title": "Encode",
       "bio": "Bosnia and Herzegovina"
     },
+    {
+      "image": "assets/ekiLogo.png",
+      "title": "EKI",
+      "bio": "Bosnia and Herzegovina"
+    },
   ];

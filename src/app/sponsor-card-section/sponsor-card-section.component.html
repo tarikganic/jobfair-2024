@@ -63,6 +63,39 @@
   <!--CARD-->
 </div>
 
+<div class="w-full text-center text-white text-3xl mobile:font-light mobile:text-xl mt-2 pb-2 font-inter font-medium">Partners</div>
+<div class="flex flex-wrap justify-center mobile:gap-1 mb-5  md:gap-16 gap-4 text-white"> <!--CONTAIENR-->
+  <!--CARD-->
+  <div *ngFor="let partner of Partners" class="friend-card h-auto flex rounded-2xl">
+    <div class="m-2 mobile:m-1 flex flex-col items-center">
+      <div [style.backgroundImage]="'url(' + partner.image + ')'" id="logoPicture" class="w-44 h-44 mobile:w-32 mobile:h-32 bg-contain bg-no-repeat bg-center rounded-xl border-1 border-black">
+      </div>
+      <div class="mt-1 w-44 mobile:w-32 pb-3 mobile:pb-0">
+        <h2 id="partnerTitle" class="text-xl h-8 text-center  font-bold mobile:text-xs">{{ partner.title }}</h2>
+      </div>
+    </div>
+  </div>
+    
+  <!--CARD-->
+</div>
+
+
+<div class="w-full text-center text-white text-3xl mobile:font-light mobile:text-xl mt-2 pb-2 font-inter font-medium">Media Partners</div>
+<div class="flex flex-wrap justify-center mobile:gap-1 mb-5  md:gap-16 gap-4 text-white"> <!--CONTAIENR-->
+  <!--CARD-->
+  <div *ngFor="let partner of mPartners" class="friend-card h-auto flex rounded-2xl">
+    <div class="m-2 mobile:m-1 flex flex-col items-center">
+      <div [style.backgroundImage]="'url(' + partner.image + ')'" id="logoPicture" class="w-44 h-44 mobile:w-32 mobile:h-32 bg-contain bg-no-repeat bg-center rounded-xl border-1 border-black">
+      </div>
+      <div class="mt-1 w-44 mobile:w-32 pb-3 mobile:pb-0">
+        <h2 id="partnerTitle" class="text-xl h-8 text-center  font-bold mobile:text-xs">{{ partner.title }}</h2>
+      </div>
+    </div>
+  </div>
+    
+  <!--CARD-->
+</div>
+
 <div class="w-full text-center text-white text-3xl mobile:font-light mobile:text-xl mt-2 pb-2 font-inter font-medium">Friends</div>
 <div class="flex flex-wrap justify-center mobile:gap-1 mb-5  md:gap-16 gap-4 text-white"> <!--CONTAIENR-->
   <!--CARD-->
@@ -78,3 +111,7 @@
     
   <!--CARD-->
 </div>
+
+
+
+
