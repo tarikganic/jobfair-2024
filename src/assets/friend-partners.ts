@@ -14,4 +14,9 @@ export const friendPartners = [
       "title": "Eestec LC Sarajevo",
       "bio": "Sarajevo, Bosnia and Herzegovina"
     },
+    {
+      "image": "assets/ob.jpg",
+      "title": "Omladinska banka Mostar",
+      "bio": "Mostar, Bosnia and Herzegovina"
+    },
   ];
