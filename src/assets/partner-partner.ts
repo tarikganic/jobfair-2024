@@ -20,8 +20,19 @@ export const partneriPartneri = [
         "bio": "Sarajevo, Bosnia and Herzegovina"
     },
     {
-        "image": "assets/snita.jpg",
-        "title": "Šnita ljubavi",
-        "bio": "Sarajevo, Bosnia and Herzegovina"
+        "image": "assets/hell.jpg",
+        "title": "HELL Energy",
+        "bio": "Bosnia and Herzegovina"
     },
+    {
+        "image": "assets/leda.png",
+        "title": "Leda",
+        "bio": "Bosnia and Herzegovina"
+    },
+    {
+        "image": "assets/coffeehouse.png",
+        "title": "CoffeeHouse Mostar",
+        "bio": "Bosnia and Herzegovina"
+    },
+    
   ];
