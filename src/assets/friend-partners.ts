@@ -19,4 +19,14 @@ export const friendPartners = [
       "title": "Omladinska banka Mostar",
       "bio": "Mostar, Bosnia and Herzegovina"
     },
+    {
+      "image": "assets/vijece.jpg",
+      "title": "Vijeće mladih Grada Mostara",
+      "bio": "Mostar, Bosnia and Herzegovina"
+    },
+    {
+      "image": "assets/rolla.jpg",
+      "title": "Rolla Apps",
+      "bio": "Mostar, Bosnia and Herzegovina"
+    },
   ];

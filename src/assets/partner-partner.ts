@@ -25,6 +25,11 @@ export const partneriPartneri = [
         "bio": "Bosnia and Herzegovina"
     },
     {
+        "image": "assets/snita.jpg",
+        "title": "Šnita Ljubavi",
+        "bio": "Bosnia and Herzegovina"
+    },
+    {
         "image": "assets/leda.png",
         "title": "Leda",
         "bio": "Bosnia and Herzegovina"
