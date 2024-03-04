@@ -53,7 +53,7 @@ export class CountdownComponent implements OnInit {
   }
 
   calculateCountdown() {
-    const targetDate = new Date('2024-03-04T00:00:00');
+    const targetDate = new Date('2024-03-04T10:00:00');
     const now = new Date();
     const timeRemaining = targetDate.getTime() - now.getTime();
     const days = Math.floor(timeRemaining / (1000 * 60 * 60 * 24));

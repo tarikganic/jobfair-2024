@@ -31,7 +31,7 @@ export const partneriPartneri = [
     },
     {
         "image": "assets/coffeehouse.png",
-        "title": "CoffeeHouse Mostar",
+        "title": "Coffeehouse Mostar",
         "bio": "Bosnia and Herzegovina"
     },
     
